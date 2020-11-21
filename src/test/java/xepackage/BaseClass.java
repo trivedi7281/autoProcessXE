@@ -18,7 +18,7 @@ public class BaseClass {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://10.32.0.28/edctest/");
+		driver.get("http://10.32.0.173/edctest/");
 	}
 	
 	@AfterClass
