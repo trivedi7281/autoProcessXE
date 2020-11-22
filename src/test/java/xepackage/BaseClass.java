@@ -7,18 +7,18 @@ import org.testng.annotations.BeforeClass;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-
 public class BaseClass {
 
 	public WebDriver driver;
+	ConfigReader config = new ConfigReader();
 
 	@BeforeClass
-	public void setup () {
-		
+	public void setup() {
+
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://10.32.0.28/edctest/");
+		driver.get(config.getURL());
 	}
 	
 	@AfterClass
