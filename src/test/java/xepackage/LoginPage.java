@@ -32,7 +32,7 @@ public class LoginPage extends BaseClass {
 	{
 		String copyright = driver.findElement(By.xpath("//*[@id='div_Footer']/p[2]")).getText();
 		System.out.println(copyright);
-		Assert.assertEquals(copyright,  );
+		Assert.assertEquals(copyright, "© 2020 Sarjen Systems Pvt. Ltd.");
 
 	}
 
