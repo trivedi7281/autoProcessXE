@@ -50,6 +50,18 @@ public class ConfigReader {
         
     }
 
+    public String getVersion()
+    {
+        return pro.getProperty("version");
+        
+    }
+
+
+    public String getCopyRight()
+    {
+        return pro.getProperty("copyright");
+        
+    }
 
 
 }
