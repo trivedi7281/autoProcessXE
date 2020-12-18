@@ -7,7 +7,7 @@ import java.util.Properties;
 
 
 public class ConfigReader {
-    // Here we create a constructor
+    // Here we create a constructor of Config reader
 
     Properties pro ;
 
